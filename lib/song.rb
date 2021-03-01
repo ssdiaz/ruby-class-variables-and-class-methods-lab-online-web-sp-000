@@ -26,7 +26,7 @@ class Song
 
   def self.genre_count
     #iterate over @@fenres and populate keys/values
-    @@genres.collect do each |
+  #  @@genres.collect do each |
   end
 
 end
