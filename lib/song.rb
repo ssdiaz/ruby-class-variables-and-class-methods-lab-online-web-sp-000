@@ -4,10 +4,13 @@ class Song
 
   @@count = 0
 
-def initialize (name, artist, genre)
+  def initialize (name, artist, genre)
+    @@count += 1
+  end
 
-  @@count += 1
+  def count
+    @@count
+  end
 
-end
 
 end
