@@ -14,7 +14,7 @@ class Song
     @@count
   end
 
-  def self.genre     #array of all genres of exisiting songs
+  def self.genres    #array of all genres of exisiting songs
     @@genres
   end
 
