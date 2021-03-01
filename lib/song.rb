@@ -8,7 +8,7 @@ class Song
 
   def initialize (name, artist, genre)
     @@count += 1
-    @@genres << genre unless @@genres.include?(genre)
+    @@genres << genre
     @@artists << artist
   end
 
@@ -17,7 +17,7 @@ class Song
   end
 
   def self.genres    #array of all genres of exisiting songs
-    @@genres
+    @@genres.uniq
   end
 
   def self.artists
@@ -25,7 +25,8 @@ class Song
   end
 
   def self.genre_count
-    
+    #iterate over @@fenres and populate keys/values
+    @@genres.collect do each |
   end
 
 end
