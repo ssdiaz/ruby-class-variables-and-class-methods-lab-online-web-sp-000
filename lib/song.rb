@@ -35,10 +35,12 @@ class Song
     #count = 0
 
     #@@
-    genre.each do |genre|
+    genre.each do |i|
+
       count ||= 0
       count += 1
-      hash[genre] = count
+      hash[i] = count
+
     end
 
     hash
