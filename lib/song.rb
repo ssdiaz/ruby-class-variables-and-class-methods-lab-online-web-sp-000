@@ -37,7 +37,8 @@ class Song
     #@@
     genre.each do |genre|
       count ||= 0
-      hash[genre] = count + 1
+      count += 1
+      hash[genre] = count
     end
 
     hash
