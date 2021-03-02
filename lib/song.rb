@@ -29,16 +29,16 @@ class Song
   end
 
   def self.genre_count
-    #iterate over @@genres and populate keys/values
     hash = {}
     count = 0
-    @@genres.each do |genre|
-      #hash = {genre => count.length}
-    #  genre ||= []
-      hash[genre] = count + 1
+    
+    @@genres.each do |i|
+      hash[i]= count
+      count += 1
     end
+    
     hash
-
+    
   end
 
 end
