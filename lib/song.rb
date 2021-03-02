@@ -38,7 +38,7 @@ class Song
       hash[genre] = count +=1
 
     end
-    hash[genre] = genre.length
+    hash
 
   end
 
