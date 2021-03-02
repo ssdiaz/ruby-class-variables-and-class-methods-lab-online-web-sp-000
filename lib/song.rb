@@ -11,7 +11,6 @@ class Song
     @artist = artist
     @genre = genre
 
-
     @@count += 1
     @@genres << genre
     @@artists << artist
@@ -31,7 +30,16 @@ class Song
 
   def self.genre_count
     #iterate over @@fenres and populate keys/values
-  #  @@genres.collect do each |
+    hash || = {}
+    #count = 0
+    @@genres.each do each |genre|
+      #hash = {genre => count.length}
+      genre || = [] #set genre equal to array
+      genre << 1 #count += 1
+
+    end
+    hash[genre] = genre.length
+
   end
 
 end
