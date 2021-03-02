@@ -32,17 +32,30 @@ class Song
     hash = {}
 
     @@genres.each do |genre|
-      if hash[genre] #is true / already created
-        hash[genre] += 1
+      if hash_genre[genre] #is true / already created
+        hash_genre[genre] += 1
       else
-        hash[genre] = 1
+        hash_genre[genre] = 1
       end
     end
 
-    hash
+    hash_genre
 
   end
 
+  def self.artist_count
+    hash_artist = {}
 
+    @@genres.each do |genre|
+      if hash_artist[genre] #is true / already created
+        hash_artist[genre] += 1
+      else
+        hash_artist[genre] = 1
+      end
+    end
+
+    hash_artist
+
+  end
 
 end
