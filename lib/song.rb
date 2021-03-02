@@ -30,18 +30,18 @@ class Song
 
   def self.genre_count
     hash = {}
-    
+
     @@genre.each do |genre|
       if hash[genre] #is true / already created
         hash[genre] += 1
       else
         hash[genre] = 1
-      end        
+      end
     end
-    
+
     hash
-    
+
   end
 
-  
+
 end
