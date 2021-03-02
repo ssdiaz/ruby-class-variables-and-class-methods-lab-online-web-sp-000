@@ -34,7 +34,7 @@ class Song
     count = 0
     @@genres.each do |genre|
       #hash = {genre => count.length}
-      genre || = [] #set genre equal to array
+      genre ||= [] #set genre equal to array
       hash[genre] = count + 1
 
     end
